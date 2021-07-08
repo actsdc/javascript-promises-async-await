@@ -51,7 +51,7 @@ async function getBooksAndMoviesAsync() {
 }
 
 async function getBooksOrMoviesAsync() {
-  const values = await Promise.race([asyncFetchBooks(), asyncFetchMovies()]);
+  const values = await Promise.race([asyncFetchBookss(), asyncFetchMovies()]);
   return values;
 }
 
