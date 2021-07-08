@@ -1,5 +1,5 @@
+import { fetchWithTimeout } from './services';
 const movies = require('./data/movies.json');
-const fetchWithTimeout = require('./services');
 
 export function fetchMovies() {
   const resolveFunction = () => movies;
