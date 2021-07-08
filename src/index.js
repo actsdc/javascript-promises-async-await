@@ -1,7 +1,6 @@
 import { fetchWithTimeout, fetchMovies, fetchBooks } from './services';
 
-const getBooksAndMovies
-function getBooksAndMovies = () => {
+const getBooksAndMovies = () => {
   return Promise.all([fetchBooks(), fetchMovies()])
     .then(([books, movies]) => ({
       books, movies
